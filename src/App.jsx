@@ -1,7 +1,10 @@
 
 import * as weatherService from './services/weatherService';
+import WeatherSearch from './components/WeatherSearch/WeatherSearch';
+import { useState } from 'react';
 
 
+const [weather, setWeather] = useState({});
 
 
 const App = () => {
@@ -10,12 +13,12 @@ const App = () => {
     console.log('Data:', data);
   };
 
-  return (
-    <main>
-      <h1>Weather API</h1>
-      <button onClick={fetchData}>Fetch Weather Data</button>
-    </main>
-  );
-};
+return (
+  <main>
+    <h1>Weather API</h1>
+    <WeatherSearch />
+  </main>
+);
+
 
 export default App;
