@@ -25,7 +25,8 @@ const WeatherSearch = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // We'll call the fetch function here
+
+
     setCity('');
   };
 
