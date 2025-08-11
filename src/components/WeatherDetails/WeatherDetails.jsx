@@ -1,8 +1,7 @@
-// src/components/WeatherDetails/WeatherDetails.jsx
 
 const WeatherDetails = (props) => {
   console.log('WeatherDetails props:', props);
-  // src/components/WeatherDetails/WeatherDetails.jsx
+
 return (
   <section>
     <h2>Weather Details</h2>
@@ -11,6 +10,7 @@ return (
     <p>Condition: {props.weather.condition}</p>
   </section>
 );
+
 
 };
 
