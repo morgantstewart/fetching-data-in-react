@@ -3,7 +3,6 @@ import { useState } from 'react';
 import WeatherDetails from './components/WeatherDetails/WeatherDetails';
 import WeatherSearch from './components/WeatherSearch/WeatherSearch';
 
-import { useState } from 'react';
 const [weather, setWeather] = useState({});
 
 
@@ -29,17 +28,10 @@ const App = () => {
       condition: data.current.condition.text,
     };
     setWeather(newWeatherState);
->>>>>>> f26764c16dd758357dfae5f321ba5726c1ac5ca2
+f26764c16dd758357dfae5f321ba5726c1ac5ca2
   };
   setWeather(newWeatherState);
-};
-
-
-
-
-
-
-  console.log('State:', weather);
+  
 
   return (
     <main>
@@ -49,6 +41,8 @@ const App = () => {
     </main>
   );
 };
+
+
 
 
 console.log('State:', weather);

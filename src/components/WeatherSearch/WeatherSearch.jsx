@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const WeatherSearch = (props) => {
@@ -6,14 +5,10 @@ const WeatherSearch = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // We'll call the fetch function here
+    if (city.trim() === '') return; // prevent empty searches
+    props.fetchData(city); 
     setCity('');
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-  props.fetchData(Atlanta); 
-  setCity('');
-};
+  };
 
   return (
     <section>
@@ -33,12 +28,3 @@ const handleSubmit = (e) => {
 };
 
 export default WeatherSearch;
-
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-  props.fetchData(city); // Don't forget to pass city state!
-  setCity('');
-};
-
-
